@@ -1,0 +1,55 @@
+// *********** For pop ups
+body.noScroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/**** Scroll Style ****/
+::-webkit-scrollbar {
+  // display: none; // ================ OPTION :D
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.mdi-menu-down::before {
+  content: "\F0140";
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 100000000s 0s,
+    color 100000000s 0s;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -moz-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  -o-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

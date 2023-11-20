@@ -1,0 +1,42 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+// PrimeVue Css Icons
+@import "primeicons/primeicons.css";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// ======================== base
+@import "base/glopal";
+@import "base/animations";
+@import "base/typography";
+
+// ======================== components
+@layer components {
+  // *** Charts
+  @import "./components/Charts/charts";
+
+  // *** Forms
+  @import "./components/Forms/form";
+
+  // *** Globals
+  @import "./components/Global/chatCom";
+  @import "./components/Global/slickSlider";
+  @import "./components/Global/custom_card";
+  @import "./components/Global/scrollbar";
+}
+
+// ======================== Pages
+@import "./pages/authentication";
+
+// ======================== rtl
+@import "mainRtl.scss";

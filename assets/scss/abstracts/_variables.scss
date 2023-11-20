@@ -1,0 +1,48 @@
+@layer base {
+  :root {
+    // =========== START:: THEME COLORS ===========
+    --main_txt: #161521;
+    --main_bg: #fff;
+
+    --body_bg: #fff;
+    --input_bg: #ffffff;
+
+    --placholder: #aaaaaa;
+    --border: #e6e6e6;
+    --shadow: #e1e1e14f;
+    --para: #909eac;
+    --overlay: #33333380;
+
+    &.dark {
+      --main_txt: #fff;
+      --main_bg: #1d1f22;
+
+      --body_bg: #181818;
+      --input_bg: #333;
+
+      --placholder: #aaaaaa;
+      --border: #39383882;
+      --shadow: #012c2370;
+      --para: #fff;
+      --overlay: #33333380;
+    }
+
+    // ===== Fixed
+    --primary: #339989;
+    --primary_hover: #0e695c;
+    // =========== END:: THEME COLORS ===========
+
+    // =========== START:: BRANDS COLORS ===========
+    --facebook: #4267b2;
+    --twitter: #1da1f2;
+    --whatsApp: #25d366;
+    --telegram: #0088cc;
+    --linkedin: #2867b2;
+    --youtube: #ff0000;
+    --instagram: #e4405f;
+    --tiktok: #ee1d51;
+    --andriod: #78c249;
+    --apple: #666666;
+    // =========== END:: BRANDS COLORS ===========
+  }
+}

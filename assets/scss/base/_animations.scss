@@ -1,0 +1,29 @@
+.fadeIn-enter-active,
+.fadeIn-leave-active {
+  transition: all 0.4s;
+}
+.fadeIn-enter-from,
+.fadeIn-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-left-enter-from,
+.slide-left-leave-to {
+  transform: translateX(100%);
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-right-enter-from,
+.slide-right-leave-to {
+  transform: translateX(-100%);
+}

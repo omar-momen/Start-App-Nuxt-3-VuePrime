@@ -1,0 +1,110 @@
+// Primary Head
+.h_1 {
+  font-size: 4rem;
+  color: var(--main);
+}
+
+// Secondary Head
+.h_2 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+// Heading tertiary
+.h_3 {
+  font-weight: normal;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 13px;
+  font-style: italic;
+}
+
+// Para
+.para {
+  color: var(--para);
+  font-size: 15px;
+  line-height: 1.2;
+
+  &.md {
+    font-size: 16px;
+  }
+
+  &.lg {
+    font-size: 18px;
+  }
+}
+
+.before_bar {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 60%;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(
+      180deg,
+      var(--primary) 0%,
+      #005291 50%,
+      var(--primary_hover) 100%
+    );
+  }
+
+  &.white_bar {
+    &::before {
+      background: #fff;
+    }
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.colored {
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--primary_hover) 0%,
+    var(--primary) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  i {
+    color: var(--primary) !important;
+  }
+}
+
+.bg_colored {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.underline {
+  text-decoration: underline;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: var(--primary) !important;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--overlay_color);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
